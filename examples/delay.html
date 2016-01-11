@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GS Test</title>
+  <script>
+    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+    insertBefore(d,q)}(window,document,'script','_gs');
+
+    if(!/pwapp\.io/.test(document.referrer))_gs('GSN-XXXXXX-X');
+  </script>
+</head>
+<body>
+  <h1>Delay events</h1>
+  <script type="text/javascript">
+  window.onload=function() {
+    setTimeout(function(){ 
+      _gs('event', 'Watched: Foo');
+    }, 6000);
+  }
+</script>
+</body>
+</html>
